@@ -6,15 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  showParagraph = 'none';
+  showParagraph = false;
   clickLog = [];
 
   toggleParagraph() {
+    this.showParagraph = !this.showParagraph;
     this.clickLog.push(new Date());
-    this.showParagraph === 'none' ? this.showParagraph = 'block' : this.showParagraph = 'none';
-  }
-
-  getDisplayStatus() {
-    return this.showParagraph;
   }
 }
