@@ -1,0 +1,9 @@
+<div class="container">
+  <div class="row">
+    <button (click)="toggleParagraph()">Display Details</button>
+    <p [ngStyle]="{display: getDisplayStatus()}"
+    >'Secret password = tuna'</p>
+    <p>Click log</p>
+    <p *ngFor="let click of clickLog">{{click}}</p>
+  </div>
+</div>

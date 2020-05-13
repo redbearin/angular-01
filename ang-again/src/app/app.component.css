@@ -4,9 +4,3 @@ div {
 h3 {
   font-weight: bold;
 }
-app-warning-alert {
-  color: red;
-}
-app-success-alert {
-  color: green;
-}
