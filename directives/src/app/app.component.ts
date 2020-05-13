@@ -8,11 +8,9 @@ import { Component } from '@angular/core';
 export class AppComponent {
   showParagraph = 'none';
   clickLog = [];
-  counter = 0;
 
   toggleParagraph() {
-    this.counter++;
-    this.clickLog.push(this.counter);
+    this.clickLog.push(new Date());
     this.showParagraph === 'none' ? this.showParagraph = 'block' : this.showParagraph = 'none';
   }
 
