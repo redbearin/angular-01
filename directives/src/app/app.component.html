@@ -4,6 +4,6 @@
     <p *ngIf="showParagraph"
     >'Secret password = tuna'</p>
     <p>Click log</p>
-    <p *ngFor="let click of clickLog">{{click}}</p>
+    <p *ngFor="let click of clickLog" [ngStyle]="{backgroundColor: click > 5 ? 'blue' : 'transparent'}" [ngClass]="{highlighted: click > 5}">{{click}}</p>
   </div>
 </div>
