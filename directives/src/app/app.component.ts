@@ -3,7 +3,8 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
+  styles: [`.highlighted {color: white;}`]
 })
 export class AppComponent {
   showParagraph = false;
@@ -11,6 +12,7 @@ export class AppComponent {
 
   toggleParagraph() {
     this.showParagraph = !this.showParagraph;
-    this.clickLog.push(new Date());
+    this.clickLog.push(this.clickLog.length + 1);
   }
+
 }
