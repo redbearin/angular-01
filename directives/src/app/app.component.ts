@@ -12,7 +12,7 @@ export class AppComponent {
 
   toggleParagraph() {
     this.showParagraph = !this.showParagraph;
-    this.clickLog.push(this.clickLog.length + 1);
+    this.clickLog.push(new Date());
   }
 
 }
